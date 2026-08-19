@@ -118,50 +118,67 @@
 
 <div class="container">
     <h1>Privacy Policy</h1>
-    <div class="last-updated">Last Updated: August 15, 2026</div>
+    <div class="last-updated">Last Updated: August 20, 2026</div>
 
     <div class="highlight-box">
-        <p>LaborRegister is built with a privacy-first approach. We operate a 100% offline application. We do not collect, transmit, sell, or store your personal or business data on any external servers.</p>
+        <p>LaborRegister operates on an offline-first architecture. Your core business records (worker profiles, attendance logs, overtime, advances, and cashbook transactions) are stored 100% locally on your device and are never uploaded to our servers.</p>
     </div>
 
     <h2>1. Overview</h2>
-    <p>This Privacy Policy outlines how <strong>LaborRegister</strong> ("we", "our", or "the app") handles your information. Your privacy is paramount, and our core principle is simple: your business data belongs entirely to you and stays on your device.</p>
+    <p>This Privacy Policy explains how <strong>LaborRegister</strong> ("we", "our", or "the app") handles your information. We respect your business privacy and believe in complete transparency regarding local data management and third-party advertising services.</p>
 
-    <h2>2. Data Collection and Storage</h2>
-    <p>LaborRegister operates locally on your device without requiring user registration or account creation.</p>
+    <h2>2. Offline Core Data Storage (Not Collected)</h2>
+    <p>LaborRegister does not require account creation, cloud logins, or personal identification to manage your workforce:</p>
     <ul>
-        <li><strong>Worker & Staff Records:</strong> Staff names, phone numbers, wage structures, and attendance statuses (Present, Absent, Half-day, Overtime) are stored strictly within local storage (Hive Database) on your device.</li>
-        <li><strong>Financial & Cashbook Records:</strong> Advance payments, notes, Cash In, and Cash Out transactions remain on your local storage.</li>
-        <li><strong>No Cloud Servers:</strong> We do not operate remote databases or servers to collect, upload, or analyze your entries.</li>
+        <li><strong>Staff & Attendance Records:</strong> Employee names, phone numbers, wage settings, and attendance statuses (Present, Half-day, Overtime, Double Shift, Paid Leave) are stored strictly within local storage on your device.</li>
+        <li><strong>Financial Records:</strong> Advance payments, payment modes, remarks, and Cash In/Cash Out records remain isolated in your local database.</li>
+        <li><strong>Zero Server Storage:</strong> We do not operate remote databases to harvest, monitor, or sync your private business records.</li>
     </ul>
 
-    <h2>3. Device Permissions</h2>
-    <p>The app may request access to certain system features solely to perform core functionality requested by you:</p>
+    <h2>3. Third-Party Advertising and Analytics SDKs</h2>
+    <p>To support free development and maintenance, Version 2.0 integrates third-party advertising via <strong>Appodeal</strong> and its mediation ad network partners (such as Google AdMob, Unity Ads, AppLovin, Vungle, DT Exchange, Mintegral, Bigo Ads, Meta Audience Network, and others).</p>
+    <p>These third-party SDKs may automatically collect certain diagnostic and advertising-related technical data, which is <strong>not linked to your personal identity</strong>:</p>
     <ul>
-        <li><strong>Storage / Files Access:</strong> Required only when you choose to export manual data backups (JSON files) or save/export generated PDF reports.</li>
-        <li><strong>Sharing Services:</strong> Utilizes system-level sharing mechanisms (such as Apple AirDrop, WhatsApp, or Email) only when you explicitly tap the share action for PDF statements or backup archives.</li>
+        <li><strong>Identifiers (Device ID / IDFA):</strong> Technical advertising identifiers used to deliver, pace, and measure advertisements.</li>
+        <li><strong>Advertising Data:</strong> Information regarding ad impressions, views, clicks, and video completions.</li>
+        <li><strong>Product Interaction & Diagnostics:</strong> Basic app performance data, crash diagnostics, and screen interaction metrics for ad loading stability.</li>
+    </ul>
+    <p>For more information on how Appodeal processes ad-related data, please visit the <a href="https://appodeal.com/privacy-policy/" target="_blank" rel="noopener noreferrer">Appodeal Privacy Policy</a>.</p>
+
+    <h2>4. Apple App Tracking Transparency (ATT)</h2>
+    <p>On iOS devices, LaborRegister complies strictly with Apple’s App Tracking Transparency framework. We will ask for your explicit consent before requesting the Identifier for Advertisers (IDFA) to deliver personalized ads. If you decline or tap "Ask App not to Track", you will still receive non-personalized, contextual advertisements.</p>
+
+    <h2>5. Customer Support & Diagnostics</h2>
+    <p>When you contact customer support or submit feedback:</p>
+    <ul>
+        <li><strong>Customer Support Data:</strong> Any email communication, feedback notes, or feature requests you send are used strictly to provide customer assistance and resolve issues. This data is not linked to your user identity or used for cross-app tracking.</li>
+        <li><strong>Other Data (Preferences):</strong> App-level settings (such as Dark Mode preference, selected currency symbol, and local filters) are stored locally on your device for smooth app functionality.</li>
     </ul>
 
-    <h2>4. Data Backup and Portability</h2>
-    <p>Since LaborRegister operates offline, you have complete control over data backups and transfers:</p>
+    <h2>6. Device Permissions</h2>
+    <p>The app only requests system permissions required to deliver requested features:</p>
     <ul>
-        <li>You can create an encrypted/structured JSON backup file via the <em>App Backup</em> feature in Settings.</li>
-        <li>These files are saved wherever you decide (such as your personal iCloud Drive, Google Drive, or Local Files).</li>
-        <li>We have zero access to your backup files.</li>
+        <li><strong>Files & Storage:</strong> Utilized only when you choose to export/import JSON database backups or save generated PDF salary and attendance reports.</li>
+        <li><strong>System Sharing:</strong> Invokes the native iOS share sheet (WhatsApp, AirDrop, Print, Mail) only when you explicitly trigger a share or export action.</li>
+        <li><strong>App Tracking:</strong> Prompts the system ATT dialog to allow or deny personalized ad tracking.</li>
     </ul>
 
-    <h2>5. Third-Party Services</h2>
-    <p>LaborRegister does not use third-party tracking tools, analytics SDKs, or targeted advertising frameworks. Your workflow is completely unmonitored.</p>
+    <h2>7. Data Backup and Portability</h2>
+    <p>Because LaborRegister does not store data on remote cloud servers, you retain full ownership of your backup files:</p>
+    <ul>
+        <li>You can generate a backup archive using the <em>Backup & Restore</em> feature in Settings.</li>
+        <li>Your backup files are stored in your selected local directory or personal iCloud Drive account. We do not have access to these files.</li>
+    </ul>
 
-    <h2>6. Children’s Privacy</h2>
-    <p>Our app does not collect personal information from anyone, including children under the age of 13. Since all data resides locally on the device, privacy protection is maintained unconditionally.</p>
+    <h2>8. Children’s Privacy</h2>
+    <p>Our app does not knowingly collect or solicit personal information from children under the age of 13. All operational records reside purely on the local physical device.</p>
 
-    <h2>7. Changes to This Policy</h2>
-    <p>We may update our Privacy Policy periodically to reflect any functional changes. Any modifications will be updated on this page along with an updated effective date.</p>
+    <h2>9. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy periodically to reflect app enhancements or legal requirements. Any modifications will be posted to this page with an updated effective date.</p>
 
     <div class="contact-box">
-        <h2>8. Contact Us</h2>
-        <p>If you have any questions, feedback, or suggestions regarding this Privacy Policy, feel free to contact us:</p>
+        <h2>10. Contact Us</h2>
+        <p>If you have any questions or suggestions regarding this Privacy Policy, please contact us at:</p>
         <p><strong>Email:</strong> <a href="mailto:surajbbu2029@gmail.com">surajbbu2029@gmail.com</a></p>
     </div>
 </div>
