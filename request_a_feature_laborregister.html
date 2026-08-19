@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support & Contact - LaborRegister</title>
+    <style>
+        :root {
+            --primary: #1B55C0;
+            --primary-hover: #143F8F;
+            --whatsapp: #25D366;
+            --whatsapp-hover: #1EBE5D;
+            --bg: #F4F6F9;
+            --card-bg: #FFFFFF;
+            --text-main: #111827;
+            --text-muted: #6B7280;
+            --border: #E5E7EB;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #3B82F6;
+                --primary-hover: #2563EB;
+                --whatsapp: #25D366;
+                --whatsapp-hover: #1EBE5D;
+                --bg: #0F172A;
+                --card-bg: #1E293B;
+                --text-main: #F8FAFC;
+                --text-muted: #94A3B8;
+                --border: #334155;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .support-card {
+            background-color: var(--card-bg);
+            width: 100%;
+            max-width: 480px;
+            border-radius: 24px;
+            padding: 36px 28px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+            border: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .icon-header {
+            width: 64px;
+            height: 64px;
+            background: rgba(27, 85, 192, 0.1);
+            color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            font-size: 28px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 28px;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 14px 20px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+        }
+
+        .btn-whatsapp {
+            background-color: var(--whatsapp);
+            color: #ffffff;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: var(--whatsapp-hover);
+            transform: translateY(-1px);
+        }
+
+        .btn-email {
+            background-color: var(--primary);
+            color: #ffffff;
+        }
+
+        .btn-email:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-1px);
+        }
+
+        .btn-call {
+            background-color: transparent;
+            color: var(--text-main);
+            border: 1px solid var(--border);
+        }
+
+        .btn-call:hover {
+            background-color: rgba(0, 0, 0, 0.03);
+            transform: translateY(-1px);
+        }
+
+        .availability-badge {
+            margin-top: 24px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(37, 211, 102, 0.1);
+            color: var(--whatsapp);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--whatsapp);
+            border-radius: 50%;
+        }
+
+        .footer-note {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+<div class="support-card">
+    <div class="icon-header">💬</div>
+    <h1>We're Here to Help!</h1>
+    <p class="subtitle">Have a question, feedback, or a feature suggestion for <strong>LaborRegister</strong>? Connect directly with us.</p>
+
+    <div class="contact-links">
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/918825154377?text=Hi%20LaborRegister%20Team,%20I%20have%20a%20query/suggestion:" class="btn btn-whatsapp">
+            <span>Chat on WhatsApp</span>
+        </a>
+
+        <!-- Direct Email Button -->
+        <a href="mailto:surajbbu2029@gmail.com?subject=Feature%20Request%20/%20Support%20-%20LaborRegister" class="btn btn-email">
+            <span>Send an Email</span>
+        </a>
+
+        <!-- Call Button -->
+        <a href="tel:+918825154377" class="btn btn-call">
+            <span>Call Support (+91 8825154377)</span>
+        </a>
+    </div>
+
+    <div class="availability-badge">
+        <span class="pulse-dot"></span>
+        Available: 10:00 AM – 5:00 PM IST
+    </div>
+
+    <p class="footer-note">LaborRegister Daily Attendance &copy; 2026</p>
+</div>
+
+</body>
+</html>
