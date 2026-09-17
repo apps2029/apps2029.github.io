@@ -102,6 +102,20 @@
             font-size: 0.95rem;
         }
 
+        .sub-box {
+            background-color: #F8FAFC;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin: 16px 0;
+        }
+
+        .sub-box h3 {
+            font-size: 1.05rem;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
         .contact-card {
             background-color: #F8FAFC;
             border: 1px solid var(--border);
@@ -137,56 +151,77 @@
         <div class="last-updated">Last Updated: September 2026</div>
     </div>
 
-    <p>Welcome to <strong>College Attendance Tracker</strong>. We respect your personal privacy and are committed to protecting it. This Privacy Policy outlines how our mobile application operates and explains our strict offline-first data approach.</p>
+    <p>Welcome to <strong>College Attendance Tracker</strong> ("we", "our", or "the App"). We respect your personal privacy and are dedicated to protecting it. This Privacy Policy outlines how our mobile application operates and explains our strict offline-first data approach.</p>
 
     <div class="highlight-box">
-        <strong>Summary:</strong> College Attendance Tracker is an offline-first utility application. We do not require account creation, do not store your attendance records on external servers, and do not sell your personal information.
+        <strong>Summary:</strong> College Attendance Tracker is built as an offline-first utility application. We do not require account sign-ups, do not host student academic databases on external cloud servers, and do not sell or monetize personal student logs.
     </div>
 
     <h2>1. Information We Do NOT Collect</h2>
-    <p>We believe students deserve complete control over their academic logs. Therefore:</p>
+    <p>We believe students deserve complete sovereignty over their educational records:</p>
     <ul>
-        <li><strong>No Personal Identifiers:</strong> We do not collect your name, email address, student ID, roll number, or phone number.</li>
-        <li><strong>No Account Sign-up:</strong> You can use all core features without registering or logging in.</li>
-        <li><strong>No Server Sync:</strong> Your subjects, lecture counts, bunk logs, and timetable entries remain entirely on your smartphone.</li>
+        <li><strong>No Personal Identifiers:</strong> We do not collect or store your name, email address, student roll number, college registration ID, or phone number.</li>
+        <li><strong>No Account Sign-up:</strong> All core capabilities (attendance marking, safe bunk calculating, PDF exporting) are fully accessible without registration.</li>
+        <li><strong>No Academic Cloud Synchronization:</strong> Your subject list, lecture logs, absent dates, and custom percentages remain exclusively on your device.</li>
     </ul>
 
     <h2>2. Data Stored Locally on Your Device</h2>
-    <p>All data created while using the application is stored securely on your local device storage using encrypted/isolated local databases (Hive):</p>
+    <p>All functional data created during app usage is stored securely on your physical device using local database storage (Hive / local isolated storage):</p>
     <ul>
-        <li>Course and subject names</li>
-        <li>Attendance logs (Present, Absent, Duty Leave, Medical Leave, Cancelled)</li>
-        <li>Target attendance percentages (e.g., 75% criteria)</li>
-        <li>Custom lecture notes and time preferences</li>
+        <li>Course and subject names.</li>
+        <li>Attendance logs (Present, Absent, Duty Leave, Medical Leave, Cancelled).</li>
+        <li>Target attendance percentage thresholds (e.g., 75% criteria).</li>
+        <li>Custom lecture notes, timetable configurations, and local preferences.</li>
     </ul>
 
     <h2>3. Backups and Data Ownership</h2>
-    <p>Because your data is stored locally, uninstalling the app or resetting your phone will delete your data unless you create a backup.</p>
+    <p>Because your academic records reside strictly on your local device, uninstalling the app or wiping your device will erase your local records unless backed up:</p>
     <ul>
-        <li><strong>Exporting Data:</strong> When you generate a backup file (JSON format), it is saved directly to your chosen local folder, iCloud Drive, or Google Drive account.</li>
-        <li><strong>Importing Data:</strong> You have full control over importing backup files to restore your semester attendance records.</li>
+        <li><strong>Exporting Data:</strong> When generating an encrypted/structured backup file (.json), it is written directly to your local file system, personal iCloud Drive, or chosen storage destination. We have no access to these files.</li>
+        <li><strong>Importing Data:</strong> You retain complete autonomy to restore your semester attendance records on any compatible device at any time.</li>
     </ul>
 
     <h2>4. Device Permissions</h2>
-    <p>To function properly, the app may request the following permissions:</p>
+    <p>The app requests minimal iOS device permissions strictly necessary for its advertised features:</p>
     <ul>
-        <li><strong>Notifications:</strong> Used strictly for optional local daily attendance reminders (e.g., 10:00 PM alert). No remote marketing push notifications are sent.</li>
-        <li><strong>Storage / File Access:</strong> Used only when you choose to export or import your attendance backup files or PDF semester reports.</li>
+        <li><strong>App Tracking Transparency (iOS):</strong> Used solely to request permission for ad measurement and non-identifying telemetry via third-party advertising partners.</li>
+        <li><strong>Notifications:</strong> Used exclusively to deliver optional, scheduled local reminders (e.g., daily attendance logging reminders). We do not send remote marketing push notifications.</li>
+        <li><strong>Files & Storage Access:</strong> Invoked only when you explicitly export PDF attendance reports or save/load JSON backup files.</li>
     </ul>
 
-    <h2>5. Third-Party Services and Advertisements</h2>
-    <p>To keep the app free and maintain continuous updates, the app may display minimal advertisements provided by third-party advertising networks (such as Google AdMob). These networks may use non-identifying device advertising identifiers in compliance with standard mobile privacy guidelines.</p>
+    <h2>5. Third-Party Advertising & App Tracking Transparency (ATT)</h2>
+    <p>To keep the application free for students worldwide, we display mobile advertisements through certified advertising SDKs, including <strong>Google AdMob</strong> and mediation partners such as <strong>Unity LevelPlay / ironSource</strong>.</p>
+    
+    <div class="sub-box">
+        <h3>Data Collected by Advertising Partners</h3>
+        <p>In full alignment with Apple's App Store Privacy Nutrition Labels, third-party advertising partners may collect the following technical telemetry data:</p>
+        <ul>
+            <li><strong>Identifiers (Device ID):</strong> Device advertising identifiers (IDFA) where permitted by user consent.</li>
+            <li><strong>Usage Data (Product Interaction & Advertising Data):</strong> Ad display frequency, user ad interactions (views, taps), and mediation routing statistics.</li>
+            <li><strong>Diagnostics:</strong> SDK crash logs and performance indicators to prevent ad failures.</li>
+        </ul>
+    </div>
+
+    <div class="sub-box">
+        <h3>App Tracking Transparency (ATT) Compliance</h3>
+        <p>In accordance with Apple Guideline 5.1.1, on iOS devices the application displays an App Tracking Transparency prompt prior to requesting the IDFA:</p>
+        <ul>
+            <li><strong>If you select "Ask App not to Track":</strong> Your decision is strictly respected. Advertising identifiers are completely disabled, and only context-based, non-personalized advertisements are displayed.</li>
+            <li><strong>Zero Feature Penalty:</strong> Declining tracking permission does not lock, restrict, or degrade any attendance-tracking or bunk-calculation functionality.</li>
+            <li><strong>Changing Your Preference:</strong> You can modify or revoke this permission at any time via your device settings at: <em>Settings &rarr; Privacy & Security &rarr; Tracking &rarr; College Attendance Tracker</em>.</li>
+        </ul>
+    </div>
 
     <h2>6. Children's Privacy</h2>
-    <p>Our app does not collect personal data from anyone, including children under the age of 13. It is intended for general use by students and individuals seeking routine management.</p>
+    <p>Our application is designed for general student and adult use. We do not knowingly solicit or collect personally identifiable information from children under the age of 13. All academic tracking operations occur locally on the user's hardware.</p>
 
     <h2>7. Changes to This Privacy Policy</h2>
-    <p>We may update our Privacy Policy periodically. Any updates will be published directly on this page with a revised "Last Updated" date.</p>
+    <p>We reserve the right to modify this Privacy Policy to reflect app updates or regulatory adjustments. Any revisions will be published immediately on this page with an updated revision date.</p>
 
     <h2>8. Contact Us</h2>
     <div class="contact-card">
-        <p>If you have any questions or feedback regarding this Privacy Policy, feel free to contact us:</p>
-        <p>Email: <a href="mailto:canadafactsquiz@outlook.com">canadafactsquiz@outlook.com</a></p>
+        <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy or your data security, please contact our development team:</p>
+        <p>📧 Email: <a href="mailto:canadafactsquiz@outlook.com">canadafactsquiz@outlook.com</a></p>
         <p>Developer: <strong>College Attendance Tracker Team</strong></p>
     </div>
 
